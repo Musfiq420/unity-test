@@ -17,29 +17,7 @@
               "value": "ALLOWALL"
             }
           ]
-        },
-         {
-      "source": "/Build/*.wasm",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/wasm"
         }
-      ]
-    },
-    {
-      "source": "/Build/*.wasm.br",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/wasm"
-        },
-        {
-          "key": "Content-Encoding",
-          "value": "br"
-        }
-      ]
-    }
     ]
   }
   

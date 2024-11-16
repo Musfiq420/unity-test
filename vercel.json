@@ -6,13 +6,40 @@
           {
             "key": "Content-Encoding",
             "value": "br"
-          },
-          {
-          "key": "X-Frame-Options",
-          "value": "ALLOWALL"
           }
         ]
-      }
+      },
+        {
+          "source": "/(.*)",
+          "headers": [
+            {
+              "key": "X-Frame-Options",
+              "value": "ALLOWALL"
+            }
+          ]
+        },
+         {
+      "source": "/Build/*.wasm",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/wasm"
+        }
+      ]
+    },
+    {
+      "source": "/Build/*.wasm.br",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/wasm"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "br"
+        }
+      ]
+    }
     ]
   }
   

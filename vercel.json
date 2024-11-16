@@ -6,6 +6,10 @@
           {
             "key": "Content-Encoding",
             "value": "br"
+          },
+          {
+          "key": "X-Frame-Options",
+          "value": "ALLOWALL"
           }
         ]
       }
